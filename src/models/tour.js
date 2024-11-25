@@ -49,7 +49,7 @@ const tourModel ={
 
     async deleteTourModel(tourId){
         // CONEXIÓN A BDD
-        const url = `http://localhost:4000/tours/${tourId}`
+        const url = `${process.env.URL_BDD_TOURS}${tourId}`
         // ENVIAR INFO A BDD
         const peticion = await fetch(url,{
             method:"DELETE"
