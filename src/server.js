@@ -9,14 +9,22 @@ import routerTour from './routers/tour_routes.js'
 import routerUser from './routers/user_routes.js'
 
 
+
 // Inicializaciones
 const app = express()
 
+dotenv.config()
+
 cloudinary.config({ 
-    cloud_name: 'demo-web', 
-    api_key: '123', 
-    api_secret: '456'
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+    api_key: process.env.CLOUDINARY_API_KEY, 
+    api_secret: process.env.CLOUDINARY_API_SECRET
   });
+
+app.use(fileupload({
+    useTempFiles : true,
+    tempFileDir : './uploads'
+}))
 
 // Variables 
 app.set('port', process.env.puertito || 3000)

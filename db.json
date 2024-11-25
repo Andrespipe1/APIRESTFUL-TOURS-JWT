@@ -25,6 +25,13 @@
       "maxParticipantes": 8,
       "imagen": "https://i.ytimg.com/vi/OaOQ_uO2VNE/maxresdefault.jpg",
       "precio": 50
+    },
+    {
+      "id": "4f8d74db-ac85-4c65-978d-29980048c416",
+      "name": "Tour-Quilotoa",
+      "price": "20",
+      "imagen": "https://res.cloudinary.com/dcqqboqsc/image/upload/v1732562356/tours/decdkr74gr62ydllexej.jpg",
+      "public_id": "tours/decdkr74gr62ydllexej"
     }
   ],
   "users": [
@@ -33,6 +40,11 @@
       "password": "$2b$10$FlbTUh6zwPvUaqG0.QWDguvi0Yxsp2ihXYV17f/2CpTgEbRKa7qau",
       "name": "Byron",
       "username": "Byron"
+    },
+    {
+      "id": "b3abfa23-47d2-4ed2-952d-b77c653adc62",
+      "password": "$2b$10$lNBH5O35jN1gFB6MsFpBoOeGMkp5Q2GVPLWee1/A802u/uJ2GBPCG",
+      "username": "Andres"
     }
   ]
 }
